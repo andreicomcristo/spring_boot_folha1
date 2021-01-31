@@ -9,17 +9,6 @@ public class FolhaWebApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(FolhaWebApplication.class, args);
 		
-		
-		//ffffsó um comentário*///ffffsó um comentário*///ffffsó um comentário*///ffffsó um comentário*///ffffsó um comentário*/
-		
-		
-		
-		
-		//ffffsó um comentário*///ffffsó um comentário*/
-		
-		//ffffsó um comentário*/
-		//só um comentário*/  eeee
-		
 	}
 
 }
