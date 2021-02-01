@@ -1,5 +1,7 @@
 package com.folha.boot.domain;
 
+import java.util.List;
+
 import javax.persistence.*;
 
 @SuppressWarnings("serial")
@@ -35,5 +37,5 @@ public class Enderecos extends AbstractEntity<Long> {
 	private TiposLogradouro idTipoLogradouroFk;
 
 	@OneToMany(mappedBy = "seqEndereco")
-	private Collection<Pessoa> pessoaCollection;
+	private List<Pessoa> pessoaCollection;
 }

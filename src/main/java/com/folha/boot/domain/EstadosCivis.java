@@ -1,5 +1,7 @@
 package com.folha.boot.domain;
 
+import java.util.List;
+
 import javax.persistence.*;
 
 @SuppressWarnings("serial")
@@ -14,5 +16,5 @@ public class EstadosCivis extends AbstractEntity<Long> {
 	private String descricaoEstadoCivil;
 
 	@OneToMany(mappedBy = "seqEstadoCivil")
-	private Collection<Pessoa> pessoaCollection;
+	private List<Pessoa> pessoaCollection;
 }

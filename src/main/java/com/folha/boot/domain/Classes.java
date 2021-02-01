@@ -1,5 +1,7 @@
 package com.folha.boot.domain;
 
+import java.util.List;
+
 import javax.persistence.*;
 
 @SuppressWarnings("serial")
@@ -17,6 +19,6 @@ public class Classes extends AbstractEntity<Long> {
 	private String descricaoClasse;
 
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "idClasseFk")
-	private Collection<HistFuncionariosClasse> histFuncionariosClasseCollection;
+	private List<HistFuncionariosClasse> histFuncionariosClasseCollection;
 
 }

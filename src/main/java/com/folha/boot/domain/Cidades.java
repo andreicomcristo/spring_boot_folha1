@@ -1,5 +1,7 @@
 package com.folha.boot.domain;
 
+import java.util.List;
+
 import javax.persistence.*;
 
 @SuppressWarnings("serial")
@@ -19,15 +21,15 @@ public class Cidades extends AbstractEntity<Long> {
 	private Uf idUfFk;
 
 	@OneToMany(mappedBy = "idEnderecoCidadeFk")
-	private Collection<Enderecos> enderecosCollection;
+	private List<Enderecos> enderecosCollection;
 
 	@OneToMany(mappedBy = "idEnderecoCidadeFk")
-	private Collection<Unidades> unidadesCollection;
+	private List<Unidades> unidadesCollection;
 
 	@OneToMany(mappedBy = "seqCidadeNatal")
-	private Collection<Pessoa> pessoaCollection;
+	private List<Pessoa> pessoaCollection;
 
 	@OneToMany(mappedBy = "idCidadeFk")
-	private Collection<PessoaDocumentosTitulo> pessoaDocumentosTituloCollection;
+	private List<PessoaDocumentosTitulo> pessoaDocumentosTituloCollection;
 
 }

@@ -1,6 +1,7 @@
 package com.folha.boot.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.*;
 
@@ -26,7 +27,7 @@ public class Autorizacoes extends AbstractEntity<Long> {
 	private Date dtCriacao;
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "idAutorizacaoFk")
 
-	private Collection<HistFuncionariosAutorizacao> histFuncionariosAutorizacaoCollection;
+	private List<HistFuncionariosAutorizacao> histFuncionariosAutorizacaoCollection;
 	@JoinColumn(name = "id_funcionario_fk", referencedColumnName = "id", nullable = false)
 	@ManyToOne(optional = false)
 

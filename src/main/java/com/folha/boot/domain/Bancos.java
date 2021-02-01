@@ -1,5 +1,7 @@
 package com.folha.boot.domain;
 
+import java.util.List;
+
 import javax.persistence.*;
 
 @SuppressWarnings("serial")
@@ -18,6 +20,6 @@ public class Bancos extends AbstractEntity<Long> {
 
 	// ajustar essa relação.
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "idBancoFk")
-	private Collection<PessoaBancos> pessoaBancosCollection;
+	private List<PessoaBancos> pessoaBancosCollection;
 
 }

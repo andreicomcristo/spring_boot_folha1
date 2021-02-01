@@ -1,5 +1,7 @@
 package com.folha.boot.domain;
 
+import java.util.List;
+
 import javax.persistence.*;
 
 @SuppressWarnings("serial")
@@ -14,6 +16,6 @@ public class Conselhos extends AbstractEntity<Long> {
 	private String descricaoConselho;
 
 	@OneToMany(mappedBy = "idConselhosFk")
-	private Collection<PessoaDocumentosConselho> pessoaDocumentosConselhoCollection;
+	private List<PessoaDocumentosConselho> pessoaDocumentosConselhoCollection;
 
 }

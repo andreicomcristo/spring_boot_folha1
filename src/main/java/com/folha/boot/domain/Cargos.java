@@ -1,5 +1,7 @@
 package com.folha.boot.domain;
 
+import java.util.List;
+
 import javax.persistence.*;
 
 @SuppressWarnings("serial")
@@ -14,10 +16,10 @@ public class Cargos extends AbstractEntity<Long> {
 	private String descricaoCargo;
 
 	@OneToMany(mappedBy = "idCargoFk")
-	private Collection<CargosEspecialidade> cargosEspecialidadeCollection;
+	private List<CargosEspecialidade> cargosEspecialidadeCollection;
 
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "idCargoFk")
-	private Collection<HistFuncionariosCargos> histFuncionariosCargosCollection;
+	private List<HistFuncionariosCargos> histFuncionariosCargosCollection;
 
 	@JoinColumn(name = "id_nivel_cargo_fk", referencedColumnName = "id", nullable = false)
 	@ManyToOne(optional = false)
