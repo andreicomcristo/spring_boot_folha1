@@ -1,4 +1,4 @@
-package com.folha.boot.dao;
+package com.folha.boot.Reposytory;
 
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
