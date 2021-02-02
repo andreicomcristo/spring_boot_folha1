@@ -25,4 +25,45 @@ public class PessoaDocumentosRg extends AbstractEntity<Long> {
 	@JoinColumn(name = "id_uf_emissao", referencedColumnName = "id")
 	@ManyToOne
 	private Uf idUfEmissao;
+
+	public String getRgNumero() {
+		return rgNumero;
+	}
+
+	public void setRgNumero(String rgNumero) {
+		this.rgNumero = rgNumero;
+	}
+
+	public String getRgOrgaoEmissor() {
+		return rgOrgaoEmissor;
+	}
+
+	public void setRgOrgaoEmissor(String rgOrgaoEmissor) {
+		this.rgOrgaoEmissor = rgOrgaoEmissor;
+	}
+
+	public Date getDtEmissao() {
+		return dtEmissao;
+	}
+
+	public void setDtEmissao(Date dtEmissao) {
+		this.dtEmissao = dtEmissao;
+	}
+
+	public long getIdPessoaFk() {
+		return idPessoaFk;
+	}
+
+	public void setIdPessoaFk(long idPessoaFk) {
+		this.idPessoaFk = idPessoaFk;
+	}
+
+	public Uf getIdUfEmissao() {
+		return idUfEmissao;
+	}
+
+	public void setIdUfEmissao(Uf idUfEmissao) {
+		this.idUfEmissao = idUfEmissao;
+	}
+	
 }

@@ -18,4 +18,29 @@ public class Situacoes extends AbstractEntity<Long> {
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "idSituacaoFk")
     private List<HistFuncionariosSituacoes> histFuncionariosSituacoesCollection;
 
+	public String getNomeSituacao() {
+		return nomeSituacao;
+	}
+
+	public void setNomeSituacao(String nomeSituacao) {
+		this.nomeSituacao = nomeSituacao;
+	}
+
+	public String getDescricaoSituacao() {
+		return descricaoSituacao;
+	}
+
+	public void setDescricaoSituacao(String descricaoSituacao) {
+		this.descricaoSituacao = descricaoSituacao;
+	}
+
+	public List<HistFuncionariosSituacoes> getHistFuncionariosSituacoesCollection() {
+		return histFuncionariosSituacoesCollection;
+	}
+
+	public void setHistFuncionariosSituacoesCollection(
+			List<HistFuncionariosSituacoes> histFuncionariosSituacoesCollection) {
+		this.histFuncionariosSituacoesCollection = histFuncionariosSituacoesCollection;
+	}
+
 }

@@ -23,4 +23,45 @@ public class PessoaDocumentosTitulo extends AbstractEntity<Long> {
 	@JoinColumn(name = "id_pessoa_fk", referencedColumnName = "id", nullable = false)
     @ManyToOne(optional = false)
     private Pessoa idPessoaFk;
+
+	public String getNumeroTitulo() {
+		return numeroTitulo;
+	}
+
+	public void setNumeroTitulo(String numeroTitulo) {
+		this.numeroTitulo = numeroTitulo;
+	}
+
+	public String getZona() {
+		return zona;
+	}
+
+	public void setZona(String zona) {
+		this.zona = zona;
+	}
+
+	public String getSecao() {
+		return secao;
+	}
+
+	public void setSecao(String secao) {
+		this.secao = secao;
+	}
+
+	public Cidades getIdCidadeFk() {
+		return idCidadeFk;
+	}
+
+	public void setIdCidadeFk(Cidades idCidadeFk) {
+		this.idCidadeFk = idCidadeFk;
+	}
+
+	public Pessoa getIdPessoaFk() {
+		return idPessoaFk;
+	}
+
+	public void setIdPessoaFk(Pessoa idPessoaFk) {
+		this.idPessoaFk = idPessoaFk;
+	}
+	
 }

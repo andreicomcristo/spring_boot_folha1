@@ -17,4 +17,28 @@ public class PessoaDocumentosReservista extends AbstractEntity<Long> {
 	@ManyToOne(optional = false)
 	private Pessoa idPessoaFk;
 
+	public String getNumero() {
+		return numero;
+	}
+
+	public void setNumero(String numero) {
+		this.numero = numero;
+	}
+
+	public String getSerie() {
+		return serie;
+	}
+
+	public void setSerie(String serie) {
+		this.serie = serie;
+	}
+
+	public Pessoa getIdPessoaFk() {
+		return idPessoaFk;
+	}
+
+	public void setIdPessoaFk(Pessoa idPessoaFk) {
+		this.idPessoaFk = idPessoaFk;
+	}
+
 }

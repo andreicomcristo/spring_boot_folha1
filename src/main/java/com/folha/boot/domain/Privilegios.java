@@ -19,4 +19,28 @@ public class Privilegios extends AbstractEntity<Long> {
 	@OneToMany(mappedBy = "seqPrivilegio")
 	private List<PessoaOperadores> pessoaOperadoresCollection;
 
+	public String getNomePrivilegio() {
+		return nomePrivilegio;
+	}
+
+	public void setNomePrivilegio(String nomePrivilegio) {
+		this.nomePrivilegio = nomePrivilegio;
+	}
+
+	public String getDescricaoPrivilegio() {
+		return descricaoPrivilegio;
+	}
+
+	public void setDescricaoPrivilegio(String descricaoPrivilegio) {
+		this.descricaoPrivilegio = descricaoPrivilegio;
+	}
+
+	public List<PessoaOperadores> getPessoaOperadoresCollection() {
+		return pessoaOperadoresCollection;
+	}
+
+	public void setPessoaOperadoresCollection(List<PessoaOperadores> pessoaOperadoresCollection) {
+		this.pessoaOperadoresCollection = pessoaOperadoresCollection;
+	}
+
 }

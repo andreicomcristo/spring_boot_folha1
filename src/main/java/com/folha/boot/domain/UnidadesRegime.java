@@ -21,4 +21,36 @@ public class UnidadesRegime extends AbstractEntity<Long> {
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "idUnidadeRegimeFk")
 	private List<HistUnidadesRegime> histUnidadesRegimeCollection;
 
+	public String getSiglaRegimeUnidLotacao() {
+		return siglaRegimeUnidLotacao;
+	}
+
+	public void setSiglaRegimeUnidLotacao(String siglaRegimeUnidLotacao) {
+		this.siglaRegimeUnidLotacao = siglaRegimeUnidLotacao;
+	}
+
+	public String getNomeRegimeUnidLotacao() {
+		return nomeRegimeUnidLotacao;
+	}
+
+	public void setNomeRegimeUnidLotacao(String nomeRegimeUnidLotacao) {
+		this.nomeRegimeUnidLotacao = nomeRegimeUnidLotacao;
+	}
+
+	public String getDescricaoRegimeUnidLotacao() {
+		return descricaoRegimeUnidLotacao;
+	}
+
+	public void setDescricaoRegimeUnidLotacao(String descricaoRegimeUnidLotacao) {
+		this.descricaoRegimeUnidLotacao = descricaoRegimeUnidLotacao;
+	}
+
+	public List<HistUnidadesRegime> getHistUnidadesRegimeCollection() {
+		return histUnidadesRegimeCollection;
+	}
+
+	public void setHistUnidadesRegimeCollection(List<HistUnidadesRegime> histUnidadesRegimeCollection) {
+		this.histUnidadesRegimeCollection = histUnidadesRegimeCollection;
+	}
+
 }

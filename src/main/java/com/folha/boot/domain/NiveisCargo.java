@@ -24,4 +24,44 @@ public class NiveisCargo extends AbstractEntity<Long> {
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "idNivelCargoFk")
 	private List<Cargos> cargosCollection;
 
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getSiglaNivelCargo() {
+		return siglaNivelCargo;
+	}
+
+	public void setSiglaNivelCargo(String siglaNivelCargo) {
+		this.siglaNivelCargo = siglaNivelCargo;
+	}
+
+	public String getNomeNivelCargo() {
+		return nomeNivelCargo;
+	}
+
+	public void setNomeNivelCargo(String nomeNivelCargo) {
+		this.nomeNivelCargo = nomeNivelCargo;
+	}
+
+	public String getDescricaoNivelCargo() {
+		return descricaoNivelCargo;
+	}
+
+	public void setDescricaoNivelCargo(String descricaoNivelCargo) {
+		this.descricaoNivelCargo = descricaoNivelCargo;
+	}
+
+	public List<Cargos> getCargosCollection() {
+		return cargosCollection;
+	}
+
+	public void setCargosCollection(List<Cargos> cargosCollection) {
+		this.cargosCollection = cargosCollection;
+	}
+
 }

@@ -18,4 +18,28 @@ public class PessoaDocumentos extends AbstractEntity<Long> {
 	@ManyToOne
 	private TiposDeDocumento idTiposDeDocumentoFk;
 
+	public String getNumeroDocumento() {
+		return numeroDocumento;
+	}
+
+	public void setNumeroDocumento(String numeroDocumento) {
+		this.numeroDocumento = numeroDocumento;
+	}
+
+	public Pessoa getIdPessoaFk() {
+		return idPessoaFk;
+	}
+
+	public void setIdPessoaFk(Pessoa idPessoaFk) {
+		this.idPessoaFk = idPessoaFk;
+	}
+
+	public TiposDeDocumento getIdTiposDeDocumentoFk() {
+		return idTiposDeDocumentoFk;
+	}
+
+	public void setIdTiposDeDocumentoFk(TiposDeDocumento idTiposDeDocumentoFk) {
+		this.idTiposDeDocumentoFk = idTiposDeDocumentoFk;
+	}
+
 }

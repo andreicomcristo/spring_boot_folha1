@@ -25,4 +25,44 @@ public class Uf extends AbstractEntity<Long> {
 	@OneToMany(mappedBy = "idUfEmissao")
 	private List<PessoaDocumentosRg> pessoaDocumentosRgCollection;
 
+	public String getSiglaUf() {
+		return siglaUf;
+	}
+
+	public void setSiglaUf(String siglaUf) {
+		this.siglaUf = siglaUf;
+	}
+
+	public String getNomeUf() {
+		return nomeUf;
+	}
+
+	public void setNomeUf(String nomeUf) {
+		this.nomeUf = nomeUf;
+	}
+
+	public List<PessoaDocumentosConselho> getPessoaDocumentosConselhoCollection() {
+		return pessoaDocumentosConselhoCollection;
+	}
+
+	public void setPessoaDocumentosConselhoCollection(List<PessoaDocumentosConselho> pessoaDocumentosConselhoCollection) {
+		this.pessoaDocumentosConselhoCollection = pessoaDocumentosConselhoCollection;
+	}
+
+	public List<Cidades> getCidadesCollection() {
+		return cidadesCollection;
+	}
+
+	public void setCidadesCollection(List<Cidades> cidadesCollection) {
+		this.cidadesCollection = cidadesCollection;
+	}
+
+	public List<PessoaDocumentosRg> getPessoaDocumentosRgCollection() {
+		return pessoaDocumentosRgCollection;
+	}
+
+	public void setPessoaDocumentosRgCollection(List<PessoaDocumentosRg> pessoaDocumentosRgCollection) {
+		this.pessoaDocumentosRgCollection = pessoaDocumentosRgCollection;
+	}
+
 }

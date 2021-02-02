@@ -15,4 +15,20 @@ public class Paises extends AbstractEntity<Long> {
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "idPaisFk")
 	private List<Cidades> cidadesCollection;
 
+	public String getNomePais() {
+		return nomePais;
+	}
+
+	public void setNomePais(String nomePais) {
+		this.nomePais = nomePais;
+	}
+
+	public List<Cidades> getCidadesCollection() {
+		return cidadesCollection;
+	}
+
+	public void setCidadesCollection(List<Cidades> cidadesCollection) {
+		this.cidadesCollection = cidadesCollection;
+	}
+
 }

@@ -18,4 +18,28 @@ public class Vinculos extends AbstractEntity<Long> {
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "idVinculoFk")
 	private List<HistFuncionariosVinculos> histFuncionariosVinculosCollection;
 
+	public String getNomeVinculo() {
+		return nomeVinculo;
+	}
+
+	public void setNomeVinculo(String nomeVinculo) {
+		this.nomeVinculo = nomeVinculo;
+	}
+
+	public String getDescricaoVinculo() {
+		return descricaoVinculo;
+	}
+
+	public void setDescricaoVinculo(String descricaoVinculo) {
+		this.descricaoVinculo = descricaoVinculo;
+	}
+
+	public List<HistFuncionariosVinculos> getHistFuncionariosVinculosCollection() {
+		return histFuncionariosVinculosCollection;
+	}
+
+	public void setHistFuncionariosVinculosCollection(List<HistFuncionariosVinculos> histFuncionariosVinculosCollection) {
+		this.histFuncionariosVinculosCollection = histFuncionariosVinculosCollection;
+	}
+
 }

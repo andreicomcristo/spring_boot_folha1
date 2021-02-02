@@ -17,4 +17,29 @@ public class UnidadesNaturezaJuridica extends AbstractEntity<Long> {
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "idUnidadeDeSaudeFk")
     private List<HistUnidadesNaturezaJuridica> histUnidadesNaturezaJuridicaCollection;
 
+	public String getNomeNaturezaJuridica() {
+		return nomeNaturezaJuridica;
+	}
+
+	public void setNomeNaturezaJuridica(String nomeNaturezaJuridica) {
+		this.nomeNaturezaJuridica = nomeNaturezaJuridica;
+	}
+
+	public String getDescricaoNaturezaJuridica() {
+		return descricaoNaturezaJuridica;
+	}
+
+	public void setDescricaoNaturezaJuridica(String descricaoNaturezaJuridica) {
+		this.descricaoNaturezaJuridica = descricaoNaturezaJuridica;
+	}
+
+	public List<HistUnidadesNaturezaJuridica> getHistUnidadesNaturezaJuridicaCollection() {
+		return histUnidadesNaturezaJuridicaCollection;
+	}
+
+	public void setHistUnidadesNaturezaJuridicaCollection(
+			List<HistUnidadesNaturezaJuridica> histUnidadesNaturezaJuridicaCollection) {
+		this.histUnidadesNaturezaJuridicaCollection = histUnidadesNaturezaJuridicaCollection;
+	}
+
 }

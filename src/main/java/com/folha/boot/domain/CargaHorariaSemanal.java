@@ -18,4 +18,29 @@ public class CargaHorariaSemanal extends AbstractEntity<Long> {
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "idCargaHorariaSemanalFk")
 	private List<HistFuncionariosCargaHoraria> histFuncionariosCargaHorariaCollection;
 
+	public int getCargaHoraria() {
+		return cargaHoraria;
+	}
+
+	public void setCargaHoraria(int cargaHoraria) {
+		this.cargaHoraria = cargaHoraria;
+	}
+
+	public String getDescricaoCargaHoraria() {
+		return descricaoCargaHoraria;
+	}
+
+	public void setDescricaoCargaHoraria(String descricaoCargaHoraria) {
+		this.descricaoCargaHoraria = descricaoCargaHoraria;
+	}
+
+	public List<HistFuncionariosCargaHoraria> getHistFuncionariosCargaHorariaCollection() {
+		return histFuncionariosCargaHorariaCollection;
+	}
+
+	public void setHistFuncionariosCargaHorariaCollection(
+			List<HistFuncionariosCargaHoraria> histFuncionariosCargaHorariaCollection) {
+		this.histFuncionariosCargaHorariaCollection = histFuncionariosCargaHorariaCollection;
+	}
+	
 }

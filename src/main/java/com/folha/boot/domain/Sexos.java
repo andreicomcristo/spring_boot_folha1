@@ -21,4 +21,36 @@ public class Sexos extends AbstractEntity<Long> {
 	@OneToMany(mappedBy = "seqSexo")
 	private List<Pessoa> pessoaCollection1;
 
+	public String getNomeSexo() {
+		return nomeSexo;
+	}
+
+	public void setNomeSexo(String nomeSexo) {
+		this.nomeSexo = nomeSexo;
+	}
+
+	public String getDescricaoSexo() {
+		return descricaoSexo;
+	}
+
+	public void setDescricaoSexo(String descricaoSexo) {
+		this.descricaoSexo = descricaoSexo;
+	}
+
+	public List<Pessoa> getPessoaCollection() {
+		return pessoaCollection;
+	}
+
+	public void setPessoaCollection(List<Pessoa> pessoaCollection) {
+		this.pessoaCollection = pessoaCollection;
+	}
+
+	public List<Pessoa> getPessoaCollection1() {
+		return pessoaCollection1;
+	}
+
+	public void setPessoaCollection1(List<Pessoa> pessoaCollection1) {
+		this.pessoaCollection1 = pessoaCollection1;
+	}
+
 }

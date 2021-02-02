@@ -18,4 +18,29 @@ public class Conselhos extends AbstractEntity<Long> {
 	@OneToMany(mappedBy = "idConselhosFk")
 	private List<PessoaDocumentosConselho> pessoaDocumentosConselhoCollection;
 
+	public String getNomeConselho() {
+		return nomeConselho;
+	}
+
+	public void setNomeConselho(String nomeConselho) {
+		this.nomeConselho = nomeConselho;
+	}
+
+	public String getDescricaoConselho() {
+		return descricaoConselho;
+	}
+
+	public void setDescricaoConselho(String descricaoConselho) {
+		this.descricaoConselho = descricaoConselho;
+	}
+
+	public List<PessoaDocumentosConselho> getPessoaDocumentosConselhoCollection() {
+		return pessoaDocumentosConselhoCollection;
+	}
+
+	public void setPessoaDocumentosConselhoCollection(List<PessoaDocumentosConselho> pessoaDocumentosConselhoCollection) {
+		this.pessoaDocumentosConselhoCollection = pessoaDocumentosConselhoCollection;
+	}
+
+	
 }

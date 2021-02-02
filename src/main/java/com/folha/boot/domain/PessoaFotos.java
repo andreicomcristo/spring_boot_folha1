@@ -15,4 +15,20 @@ public class PessoaFotos extends AbstractEntity<Long> {
 	@ManyToOne(optional = false)
 	private Pessoa idPessoaFk;
 
+	public byte[] getFotografia() {
+		return fotografia;
+	}
+
+	public void setFotografia(byte[] fotografia) {
+		this.fotografia = fotografia;
+	}
+
+	public Pessoa getIdPessoaFk() {
+		return idPessoaFk;
+	}
+
+	public void setIdPessoaFk(Pessoa idPessoaFk) {
+		this.idPessoaFk = idPessoaFk;
+	}
+
 }

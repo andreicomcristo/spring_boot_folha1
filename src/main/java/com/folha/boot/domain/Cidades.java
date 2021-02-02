@@ -32,4 +32,60 @@ public class Cidades extends AbstractEntity<Long> {
 	@OneToMany(mappedBy = "idCidadeFk")
 	private List<PessoaDocumentosTitulo> pessoaDocumentosTituloCollection;
 
+	public String getNomeCidade() {
+		return nomeCidade;
+	}
+
+	public void setNomeCidade(String nomeCidade) {
+		this.nomeCidade = nomeCidade;
+	}
+
+	public Paises getIdPaisFk() {
+		return idPaisFk;
+	}
+
+	public void setIdPaisFk(Paises idPaisFk) {
+		this.idPaisFk = idPaisFk;
+	}
+
+	public Uf getIdUfFk() {
+		return idUfFk;
+	}
+
+	public void setIdUfFk(Uf idUfFk) {
+		this.idUfFk = idUfFk;
+	}
+
+	public List<Enderecos> getEnderecosCollection() {
+		return enderecosCollection;
+	}
+
+	public void setEnderecosCollection(List<Enderecos> enderecosCollection) {
+		this.enderecosCollection = enderecosCollection;
+	}
+
+	public List<Unidades> getUnidadesCollection() {
+		return unidadesCollection;
+	}
+
+	public void setUnidadesCollection(List<Unidades> unidadesCollection) {
+		this.unidadesCollection = unidadesCollection;
+	}
+
+	public List<Pessoa> getPessoaCollection() {
+		return pessoaCollection;
+	}
+
+	public void setPessoaCollection(List<Pessoa> pessoaCollection) {
+		this.pessoaCollection = pessoaCollection;
+	}
+
+	public List<PessoaDocumentosTitulo> getPessoaDocumentosTituloCollection() {
+		return pessoaDocumentosTituloCollection;
+	}
+
+	public void setPessoaDocumentosTituloCollection(List<PessoaDocumentosTitulo> pessoaDocumentosTituloCollection) {
+		this.pessoaDocumentosTituloCollection = pessoaDocumentosTituloCollection;
+	}
+
 }

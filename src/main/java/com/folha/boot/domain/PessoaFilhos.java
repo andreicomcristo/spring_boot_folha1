@@ -75,4 +75,156 @@ public class PessoaFilhos extends AbstractEntity<Long> {
 	@ManyToOne(optional = false)
 	private TiposDeFiliacao idTipoFiliacaoFk;
 
+	public String getNomeFilho() {
+		return nomeFilho;
+	}
+
+	public void setNomeFilho(String nomeFilho) {
+		this.nomeFilho = nomeFilho;
+	}
+
+	public Date getDtNascimento() {
+		return dtNascimento;
+	}
+
+	public void setDtNascimento(Date dtNascimento) {
+		this.dtNascimento = dtNascimento;
+	}
+
+	public String getCpfFilho() {
+		return cpfFilho;
+	}
+
+	public void setCpfFilho(String cpfFilho) {
+		this.cpfFilho = cpfFilho;
+	}
+
+	public String getRgFilho() {
+		return rgFilho;
+	}
+
+	public void setRgFilho(String rgFilho) {
+		this.rgFilho = rgFilho;
+	}
+
+	public Date getRgDtEmissaoFilho() {
+		return rgDtEmissaoFilho;
+	}
+
+	public void setRgDtEmissaoFilho(Date rgDtEmissaoFilho) {
+		this.rgDtEmissaoFilho = rgDtEmissaoFilho;
+	}
+
+	public String getRgOrgaoExpedidor() {
+		return rgOrgaoExpedidor;
+	}
+
+	public void setRgOrgaoExpedidor(String rgOrgaoExpedidor) {
+		this.rgOrgaoExpedidor = rgOrgaoExpedidor;
+	}
+
+	public String getNumeroCertidaoNascimento() {
+		return numeroCertidaoNascimento;
+	}
+
+	public void setNumeroCertidaoNascimento(String numeroCertidaoNascimento) {
+		this.numeroCertidaoNascimento = numeroCertidaoNascimento;
+	}
+
+	public Date getDtCertidadoNascimento() {
+		return dtCertidadoNascimento;
+	}
+
+	public void setDtCertidadoNascimento(Date dtCertidadoNascimento) {
+		this.dtCertidadoNascimento = dtCertidadoNascimento;
+	}
+
+	public String getCartorioCertidadoNascimento() {
+		return cartorioCertidadoNascimento;
+	}
+
+	public void setCartorioCertidadoNascimento(String cartorioCertidadoNascimento) {
+		this.cartorioCertidadoNascimento = cartorioCertidadoNascimento;
+	}
+
+	public String getLivroCertidaoNascimento() {
+		return livroCertidaoNascimento;
+	}
+
+	public void setLivroCertidaoNascimento(String livroCertidaoNascimento) {
+		this.livroCertidaoNascimento = livroCertidaoNascimento;
+	}
+
+	public String getFolhaCertidaoNascimento() {
+		return folhaCertidaoNascimento;
+	}
+
+	public void setFolhaCertidaoNascimento(String folhaCertidaoNascimento) {
+		this.folhaCertidaoNascimento = folhaCertidaoNascimento;
+	}
+
+	public Date getDtCadastro() {
+		return dtCadastro;
+	}
+
+	public void setDtCadastro(Date dtCadastro) {
+		this.dtCadastro = dtCadastro;
+	}
+
+	public String getMotivoCadastro() {
+		return motivoCadastro;
+	}
+
+	public void setMotivoCadastro(String motivoCadastro) {
+		this.motivoCadastro = motivoCadastro;
+	}
+
+	public Date getDtCancelamento() {
+		return dtCancelamento;
+	}
+
+	public void setDtCancelamento(Date dtCancelamento) {
+		this.dtCancelamento = dtCancelamento;
+	}
+
+	public String getMotivoCancelamento() {
+		return motivoCancelamento;
+	}
+
+	public void setMotivoCancelamento(String motivoCancelamento) {
+		this.motivoCancelamento = motivoCancelamento;
+	}
+
+	public Pessoa getIdPessoaFk() {
+		return idPessoaFk;
+	}
+
+	public void setIdPessoaFk(Pessoa idPessoaFk) {
+		this.idPessoaFk = idPessoaFk;
+	}
+
+	public PessoaOperadores getIdOperadorCadastroFk() {
+		return idOperadorCadastroFk;
+	}
+
+	public void setIdOperadorCadastroFk(PessoaOperadores idOperadorCadastroFk) {
+		this.idOperadorCadastroFk = idOperadorCadastroFk;
+	}
+
+	public PessoaOperadores getIdOperadorCancelamentoFk() {
+		return idOperadorCancelamentoFk;
+	}
+
+	public void setIdOperadorCancelamentoFk(PessoaOperadores idOperadorCancelamentoFk) {
+		this.idOperadorCancelamentoFk = idOperadorCancelamentoFk;
+	}
+
+	public TiposDeFiliacao getIdTipoFiliacaoFk() {
+		return idTipoFiliacaoFk;
+	}
+
+	public void setIdTipoFiliacaoFk(TiposDeFiliacao idTipoFiliacaoFk) {
+		this.idTipoFiliacaoFk = idTipoFiliacaoFk;
+	}
+
 }

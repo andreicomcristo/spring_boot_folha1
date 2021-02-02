@@ -32,4 +32,52 @@ public class PessoaDocumentosHabilitacao extends AbstractEntity<Long> {
 	@ManyToOne
 	private Pessoa idPessoaFk;
 
+	public String getNumeroRegistro() {
+		return numeroRegistro;
+	}
+
+	public void setNumeroRegistro(String numeroRegistro) {
+		this.numeroRegistro = numeroRegistro;
+	}
+
+	public Date getDtEmissao() {
+		return dtEmissao;
+	}
+
+	public void setDtEmissao(Date dtEmissao) {
+		this.dtEmissao = dtEmissao;
+	}
+
+	public Date getDtValidade() {
+		return dtValidade;
+	}
+
+	public void setDtValidade(Date dtValidade) {
+		this.dtValidade = dtValidade;
+	}
+
+	public Date getDtPrimeiraHabilitacao() {
+		return dtPrimeiraHabilitacao;
+	}
+
+	public void setDtPrimeiraHabilitacao(Date dtPrimeiraHabilitacao) {
+		this.dtPrimeiraHabilitacao = dtPrimeiraHabilitacao;
+	}
+
+	public HabilitacaoCategorias getIdHabilitacaoCategoriasFk() {
+		return idHabilitacaoCategoriasFk;
+	}
+
+	public void setIdHabilitacaoCategoriasFk(HabilitacaoCategorias idHabilitacaoCategoriasFk) {
+		this.idHabilitacaoCategoriasFk = idHabilitacaoCategoriasFk;
+	}
+
+	public Pessoa getIdPessoaFk() {
+		return idPessoaFk;
+	}
+
+	public void setIdPessoaFk(Pessoa idPessoaFk) {
+		this.idPessoaFk = idPessoaFk;
+	}
+
 }

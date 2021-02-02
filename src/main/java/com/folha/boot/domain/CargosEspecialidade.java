@@ -16,4 +16,29 @@ public class CargosEspecialidade extends AbstractEntity<Long> {
 	@JoinColumn(name = "id_cargo_fk", referencedColumnName = "id")
 	@ManyToOne
 	private Cargos idCargoFk;
+
+	public String getNomeEspecialidadeCargo() {
+		return nomeEspecialidadeCargo;
+	}
+
+	public void setNomeEspecialidadeCargo(String nomeEspecialidadeCargo) {
+		this.nomeEspecialidadeCargo = nomeEspecialidadeCargo;
+	}
+
+	public String getDescricaoEspecialidadeCargo() {
+		return descricaoEspecialidadeCargo;
+	}
+
+	public void setDescricaoEspecialidadeCargo(String descricaoEspecialidadeCargo) {
+		this.descricaoEspecialidadeCargo = descricaoEspecialidadeCargo;
+	}
+
+	public Cargos getIdCargoFk() {
+		return idCargoFk;
+	}
+
+	public void setIdCargoFk(Cargos idCargoFk) {
+		this.idCargoFk = idCargoFk;
+	}
+
 }

@@ -21,4 +21,36 @@ public class TiposLogradouro extends AbstractEntity<Long> {
 	@OneToMany(mappedBy = "idTipoLogradouroFk")
 	private List<Unidades> unidadesCollection;
 
+	public String getNomeTipoLogradouro() {
+		return nomeTipoLogradouro;
+	}
+
+	public void setNomeTipoLogradouro(String nomeTipoLogradouro) {
+		this.nomeTipoLogradouro = nomeTipoLogradouro;
+	}
+
+	public String getDescricaoTipoLogradouro() {
+		return descricaoTipoLogradouro;
+	}
+
+	public void setDescricaoTipoLogradouro(String descricaoTipoLogradouro) {
+		this.descricaoTipoLogradouro = descricaoTipoLogradouro;
+	}
+
+	public List<Enderecos> getEnderecosCollection() {
+		return enderecosCollection;
+	}
+
+	public void setEnderecosCollection(List<Enderecos> enderecosCollection) {
+		this.enderecosCollection = enderecosCollection;
+	}
+
+	public List<Unidades> getUnidadesCollection() {
+		return unidadesCollection;
+	}
+
+	public void setUnidadesCollection(List<Unidades> unidadesCollection) {
+		this.unidadesCollection = unidadesCollection;
+	}
+
 }

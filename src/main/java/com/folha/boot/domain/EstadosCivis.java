@@ -17,4 +17,29 @@ public class EstadosCivis extends AbstractEntity<Long> {
 
 	@OneToMany(mappedBy = "seqEstadoCivil")
 	private List<Pessoa> pessoaCollection;
+
+	public String getNomeEstadoCivil() {
+		return nomeEstadoCivil;
+	}
+
+	public void setNomeEstadoCivil(String nomeEstadoCivil) {
+		this.nomeEstadoCivil = nomeEstadoCivil;
+	}
+
+	public String getDescricaoEstadoCivil() {
+		return descricaoEstadoCivil;
+	}
+
+	public void setDescricaoEstadoCivil(String descricaoEstadoCivil) {
+		this.descricaoEstadoCivil = descricaoEstadoCivil;
+	}
+
+	public List<Pessoa> getPessoaCollection() {
+		return pessoaCollection;
+	}
+
+	public void setPessoaCollection(List<Pessoa> pessoaCollection) {
+		this.pessoaCollection = pessoaCollection;
+	}
+	
 }

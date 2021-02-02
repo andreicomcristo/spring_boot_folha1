@@ -60,4 +60,124 @@ public class PessoaBancos extends AbstractEntity<Long> {
 	@ManyToOne
 	private PessoaOperadores idOperadorCancelamentoFk;
 
+	public String getOperacaoVariacao() {
+		return operacaoVariacao;
+	}
+
+	public void setOperacaoVariacao(String operacaoVariacao) {
+		this.operacaoVariacao = operacaoVariacao;
+	}
+
+	public String getAgenciaNumero() {
+		return agenciaNumero;
+	}
+
+	public void setAgenciaNumero(String agenciaNumero) {
+		this.agenciaNumero = agenciaNumero;
+	}
+
+	public String getAgenciaDv() {
+		return agenciaDv;
+	}
+
+	public void setAgenciaDv(String agenciaDv) {
+		this.agenciaDv = agenciaDv;
+	}
+
+	public String getContaNumero() {
+		return contaNumero;
+	}
+
+	public void setContaNumero(String contaNumero) {
+		this.contaNumero = contaNumero;
+	}
+
+	public String getContaDv() {
+		return contaDv;
+	}
+
+	public void setContaDv(String contaDv) {
+		this.contaDv = contaDv;
+	}
+
+	public String getAgenciaNome() {
+		return agenciaNome;
+	}
+
+	public void setAgenciaNome(String agenciaNome) {
+		this.agenciaNome = agenciaNome;
+	}
+
+	public String getPrioritario() {
+		return prioritario;
+	}
+
+	public void setPrioritario(String prioritario) {
+		this.prioritario = prioritario;
+	}
+
+	public Date getDtCadastro() {
+		return dtCadastro;
+	}
+
+	public void setDtCadastro(Date dtCadastro) {
+		this.dtCadastro = dtCadastro;
+	}
+
+	public String getMotivoCadastro() {
+		return motivoCadastro;
+	}
+
+	public void setMotivoCadastro(String motivoCadastro) {
+		this.motivoCadastro = motivoCadastro;
+	}
+
+	public Date getDtCancelamento() {
+		return dtCancelamento;
+	}
+
+	public void setDtCancelamento(Date dtCancelamento) {
+		this.dtCancelamento = dtCancelamento;
+	}
+
+	public String getMotivoCancelamento() {
+		return motivoCancelamento;
+	}
+
+	public void setMotivoCancelamento(String motivoCancelamento) {
+		this.motivoCancelamento = motivoCancelamento;
+	}
+
+	public Bancos getIdBancoFk() {
+		return idBancoFk;
+	}
+
+	public void setIdBancoFk(Bancos idBancoFk) {
+		this.idBancoFk = idBancoFk;
+	}
+
+	public Pessoa getIdPessoaFk() {
+		return idPessoaFk;
+	}
+
+	public void setIdPessoaFk(Pessoa idPessoaFk) {
+		this.idPessoaFk = idPessoaFk;
+	}
+
+	public PessoaOperadores getIdOperadorCadastroFk() {
+		return idOperadorCadastroFk;
+	}
+
+	public void setIdOperadorCadastroFk(PessoaOperadores idOperadorCadastroFk) {
+		this.idOperadorCadastroFk = idOperadorCadastroFk;
+	}
+
+	public PessoaOperadores getIdOperadorCancelamentoFk() {
+		return idOperadorCancelamentoFk;
+	}
+
+	public void setIdOperadorCancelamentoFk(PessoaOperadores idOperadorCancelamentoFk) {
+		this.idOperadorCancelamentoFk = idOperadorCancelamentoFk;
+	}
+
 }

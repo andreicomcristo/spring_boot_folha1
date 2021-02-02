@@ -18,4 +18,29 @@ public class HabilitacaoCategorias extends AbstractEntity<Long> {
 	@OneToMany(mappedBy = "idHabilitacaoCategoriasFk")
 	private List<PessoaDocumentosHabilitacao> pessoaDocumentosHabilitacaoCollection;
 
+	public String getNomeHabilitacaoCategoria() {
+		return nomeHabilitacaoCategoria;
+	}
+
+	public void setNomeHabilitacaoCategoria(String nomeHabilitacaoCategoria) {
+		this.nomeHabilitacaoCategoria = nomeHabilitacaoCategoria;
+	}
+
+	public String getDescricaoHabilitacaoCategoria() {
+		return descricaoHabilitacaoCategoria;
+	}
+
+	public void setDescricaoHabilitacaoCategoria(String descricaoHabilitacaoCategoria) {
+		this.descricaoHabilitacaoCategoria = descricaoHabilitacaoCategoria;
+	}
+
+	public List<PessoaDocumentosHabilitacao> getPessoaDocumentosHabilitacaoCollection() {
+		return pessoaDocumentosHabilitacaoCollection;
+	}
+
+	public void setPessoaDocumentosHabilitacaoCollection(
+			List<PessoaDocumentosHabilitacao> pessoaDocumentosHabilitacaoCollection) {
+		this.pessoaDocumentosHabilitacaoCollection = pessoaDocumentosHabilitacaoCollection;
+	}
+
 }

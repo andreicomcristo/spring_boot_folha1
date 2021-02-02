@@ -80,4 +80,176 @@ public class PessoaFuncionarios extends AbstractEntity<Long> {
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "idFuncionarioFk")
     private List<HistFuncionariosUnidadeAtuacao> histFuncionariosUnidadeAtuacaoCollection;
 
+	public String getMatricula() {
+		return matricula;
+	}
+
+	public void setMatricula(String matricula) {
+		this.matricula = matricula;
+	}
+
+	public Date getDtNomeacao() {
+		return dtNomeacao;
+	}
+
+	public void setDtNomeacao(Date dtNomeacao) {
+		this.dtNomeacao = dtNomeacao;
+	}
+
+	public Date getDtPosse() {
+		return dtPosse;
+	}
+
+	public void setDtPosse(Date dtPosse) {
+		this.dtPosse = dtPosse;
+	}
+
+	public String getNumeroDeOrdem() {
+		return numeroDeOrdem;
+	}
+
+	public void setNumeroDeOrdem(String numeroDeOrdem) {
+		this.numeroDeOrdem = numeroDeOrdem;
+	}
+
+	public String getNumeroDePonto() {
+		return numeroDePonto;
+	}
+
+	public void setNumeroDePonto(String numeroDePonto) {
+		this.numeroDePonto = numeroDePonto;
+	}
+
+	public Date getDtCadastro() {
+		return dtCadastro;
+	}
+
+	public void setDtCadastro(Date dtCadastro) {
+		this.dtCadastro = dtCadastro;
+	}
+
+	public String getMotivoCadastro() {
+		return motivoCadastro;
+	}
+
+	public void setMotivoCadastro(String motivoCadastro) {
+		this.motivoCadastro = motivoCadastro;
+	}
+
+	public Date getDtCancelamento() {
+		return dtCancelamento;
+	}
+
+	public void setDtCancelamento(Date dtCancelamento) {
+		this.dtCancelamento = dtCancelamento;
+	}
+
+	public String getMotivoCancelamento() {
+		return motivoCancelamento;
+	}
+
+	public void setMotivoCancelamento(String motivoCancelamento) {
+		this.motivoCancelamento = motivoCancelamento;
+	}
+
+	public List<HistFuncionariosAutorizacao> getHistFuncionariosAutorizacaoCollection() {
+		return histFuncionariosAutorizacaoCollection;
+	}
+
+	public void setHistFuncionariosAutorizacaoCollection(
+			List<HistFuncionariosAutorizacao> histFuncionariosAutorizacaoCollection) {
+		this.histFuncionariosAutorizacaoCollection = histFuncionariosAutorizacaoCollection;
+	}
+
+	public List<HistFuncionariosClasse> getHistFuncionariosClasseCollection() {
+		return histFuncionariosClasseCollection;
+	}
+
+	public void setHistFuncionariosClasseCollection(List<HistFuncionariosClasse> histFuncionariosClasseCollection) {
+		this.histFuncionariosClasseCollection = histFuncionariosClasseCollection;
+	}
+
+	public List<HistFuncionariosCargaHoraria> getHistFuncionariosCargaHorariaCollection() {
+		return histFuncionariosCargaHorariaCollection;
+	}
+
+	public void setHistFuncionariosCargaHorariaCollection(
+			List<HistFuncionariosCargaHoraria> histFuncionariosCargaHorariaCollection) {
+		this.histFuncionariosCargaHorariaCollection = histFuncionariosCargaHorariaCollection;
+	}
+
+	public List<HistFuncionariosCargos> getHistFuncionariosCargosCollection() {
+		return histFuncionariosCargosCollection;
+	}
+
+	public void setHistFuncionariosCargosCollection(List<HistFuncionariosCargos> histFuncionariosCargosCollection) {
+		this.histFuncionariosCargosCollection = histFuncionariosCargosCollection;
+	}
+
+	public List<HistFuncionariosCarreira> getHistFuncionariosCarreiraCollection() {
+		return histFuncionariosCarreiraCollection;
+	}
+
+	public void setHistFuncionariosCarreiraCollection(List<HistFuncionariosCarreira> histFuncionariosCarreiraCollection) {
+		this.histFuncionariosCarreiraCollection = histFuncionariosCarreiraCollection;
+	}
+
+	public List<HistFuncionariosSituacoes> getHistFuncionariosSituacoesCollection() {
+		return histFuncionariosSituacoesCollection;
+	}
+
+	public void setHistFuncionariosSituacoesCollection(
+			List<HistFuncionariosSituacoes> histFuncionariosSituacoesCollection) {
+		this.histFuncionariosSituacoesCollection = histFuncionariosSituacoesCollection;
+	}
+
+	public List<Autorizacoes> getAutorizacoesCollection() {
+		return autorizacoesCollection;
+	}
+
+	public void setAutorizacoesCollection(List<Autorizacoes> autorizacoesCollection) {
+		this.autorizacoesCollection = autorizacoesCollection;
+	}
+
+	public List<HistFuncionariosVinculos> getHistFuncionariosVinculosCollection() {
+		return histFuncionariosVinculosCollection;
+	}
+
+	public void setHistFuncionariosVinculosCollection(List<HistFuncionariosVinculos> histFuncionariosVinculosCollection) {
+		this.histFuncionariosVinculosCollection = histFuncionariosVinculosCollection;
+	}
+
+	public Pessoa getIdPessoaFk() {
+		return idPessoaFk;
+	}
+
+	public void setIdPessoaFk(Pessoa idPessoaFk) {
+		this.idPessoaFk = idPessoaFk;
+	}
+
+	public PessoaOperadores getIdOperadorCadastroFk() {
+		return idOperadorCadastroFk;
+	}
+
+	public void setIdOperadorCadastroFk(PessoaOperadores idOperadorCadastroFk) {
+		this.idOperadorCadastroFk = idOperadorCadastroFk;
+	}
+
+	public PessoaOperadores getIdOperadorCancelamentoFk() {
+		return idOperadorCancelamentoFk;
+	}
+
+	public void setIdOperadorCancelamentoFk(PessoaOperadores idOperadorCancelamentoFk) {
+		this.idOperadorCancelamentoFk = idOperadorCancelamentoFk;
+	}
+
+	public List<HistFuncionariosUnidadeAtuacao> getHistFuncionariosUnidadeAtuacaoCollection() {
+		return histFuncionariosUnidadeAtuacaoCollection;
+	}
+
+	public void setHistFuncionariosUnidadeAtuacaoCollection(
+			List<HistFuncionariosUnidadeAtuacao> histFuncionariosUnidadeAtuacaoCollection) {
+		this.histFuncionariosUnidadeAtuacaoCollection = histFuncionariosUnidadeAtuacaoCollection;
+	}
+
 }

@@ -38,4 +38,77 @@ public class Enderecos extends AbstractEntity<Long> {
 
 	@OneToMany(mappedBy = "seqEndereco")
 	private List<Pessoa> pessoaCollection;
+
+	public String getEnderecoLogradouro() {
+		return enderecoLogradouro;
+	}
+
+	public void setEnderecoLogradouro(String enderecoLogradouro) {
+		this.enderecoLogradouro = enderecoLogradouro;
+	}
+
+	public String getEnderecoNumero() {
+		return enderecoNumero;
+	}
+
+	public void setEnderecoNumero(String enderecoNumero) {
+		this.enderecoNumero = enderecoNumero;
+	}
+
+	public String getEnderecoComplemento() {
+		return enderecoComplemento;
+	}
+
+	public void setEnderecoComplemento(String enderecoComplemento) {
+		this.enderecoComplemento = enderecoComplemento;
+	}
+
+	public String getEnderecoBairro() {
+		return enderecoBairro;
+	}
+
+	public void setEnderecoBairro(String enderecoBairro) {
+		this.enderecoBairro = enderecoBairro;
+	}
+
+	public String getEnderecoCep() {
+		return enderecoCep;
+	}
+
+	public void setEnderecoCep(String enderecoCep) {
+		this.enderecoCep = enderecoCep;
+	}
+
+	public Cidades getIdEnderecoCidadeFk() {
+		return idEnderecoCidadeFk;
+	}
+
+	public void setIdEnderecoCidadeFk(Cidades idEnderecoCidadeFk) {
+		this.idEnderecoCidadeFk = idEnderecoCidadeFk;
+	}
+
+	public Pessoa getIdPessoaFk() {
+		return idPessoaFk;
+	}
+
+	public void setIdPessoaFk(Pessoa idPessoaFk) {
+		this.idPessoaFk = idPessoaFk;
+	}
+
+	public TiposLogradouro getIdTipoLogradouroFk() {
+		return idTipoLogradouroFk;
+	}
+
+	public void setIdTipoLogradouroFk(TiposLogradouro idTipoLogradouroFk) {
+		this.idTipoLogradouroFk = idTipoLogradouroFk;
+	}
+
+	public List<Pessoa> getPessoaCollection() {
+		return pessoaCollection;
+	}
+
+	public void setPessoaCollection(List<Pessoa> pessoaCollection) {
+		this.pessoaCollection = pessoaCollection;
+	}
+
 }

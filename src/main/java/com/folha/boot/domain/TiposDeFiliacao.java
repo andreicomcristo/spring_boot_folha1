@@ -18,4 +18,28 @@ public class TiposDeFiliacao extends AbstractEntity<Long> {
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "idTipoFiliacaoFk")
 	private List<PessoaFilhos> pessoaFilhosCollection;
 
+	public String getNomeTipoFiliacao() {
+		return nomeTipoFiliacao;
+	}
+
+	public void setNomeTipoFiliacao(String nomeTipoFiliacao) {
+		this.nomeTipoFiliacao = nomeTipoFiliacao;
+	}
+
+	public String getDescricaoTipoFiliacao() {
+		return descricaoTipoFiliacao;
+	}
+
+	public void setDescricaoTipoFiliacao(String descricaoTipoFiliacao) {
+		this.descricaoTipoFiliacao = descricaoTipoFiliacao;
+	}
+
+	public List<PessoaFilhos> getPessoaFilhosCollection() {
+		return pessoaFilhosCollection;
+	}
+
+	public void setPessoaFilhosCollection(List<PessoaFilhos> pessoaFilhosCollection) {
+		this.pessoaFilhosCollection = pessoaFilhosCollection;
+	}
+
 }

@@ -41,4 +41,69 @@ public class Autorizacoes extends AbstractEntity<Long> {
 
 	private Unidades idUnidadeDeSaudeFk;
 
+	public Date getDtInicio() {
+		return dtInicio;
+	}
+
+	public void setDtInicio(Date dtInicio) {
+		this.dtInicio = dtInicio;
+	}
+
+	public Date getDtFim() {
+		return dtFim;
+	}
+
+	public void setDtFim(Date dtFim) {
+		this.dtFim = dtFim;
+	}
+
+	public long getIdCargaHorariaSemanalFk() {
+		return idCargaHorariaSemanalFk;
+	}
+
+	public void setIdCargaHorariaSemanalFk(long idCargaHorariaSemanalFk) {
+		this.idCargaHorariaSemanalFk = idCargaHorariaSemanalFk;
+	}
+
+	public Date getDtCriacao() {
+		return dtCriacao;
+	}
+
+	public void setDtCriacao(Date dtCriacao) {
+		this.dtCriacao = dtCriacao;
+	}
+
+	public List<HistFuncionariosAutorizacao> getHistFuncionariosAutorizacaoCollection() {
+		return histFuncionariosAutorizacaoCollection;
+	}
+
+	public void setHistFuncionariosAutorizacaoCollection(
+			List<HistFuncionariosAutorizacao> histFuncionariosAutorizacaoCollection) {
+		this.histFuncionariosAutorizacaoCollection = histFuncionariosAutorizacaoCollection;
+	}
+
+	public PessoaFuncionarios getIdFuncionarioFk() {
+		return idFuncionarioFk;
+	}
+
+	public void setIdFuncionarioFk(PessoaFuncionarios idFuncionarioFk) {
+		this.idFuncionarioFk = idFuncionarioFk;
+	}
+
+	public PessoaOperadores getIdOperadorCriacaoFk() {
+		return idOperadorCriacaoFk;
+	}
+
+	public void setIdOperadorCriacaoFk(PessoaOperadores idOperadorCriacaoFk) {
+		this.idOperadorCriacaoFk = idOperadorCriacaoFk;
+	}
+
+	public Unidades getIdUnidadeDeSaudeFk() {
+		return idUnidadeDeSaudeFk;
+	}
+
+	public void setIdUnidadeDeSaudeFk(Unidades idUnidadeDeSaudeFk) {
+		this.idUnidadeDeSaudeFk = idUnidadeDeSaudeFk;
+	}
+
 }

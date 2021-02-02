@@ -25,6 +25,41 @@ public class PessoaDocumentosConselho extends AbstractEntity<Long> {
     @JoinColumn(name = "id_uf_fk", referencedColumnName = "id")
     @ManyToOne
     private Uf idUfFk;
+	public String getNumeroConselho() {
+		return numeroConselho;
+	}
+	public void setNumeroConselho(String numeroConselho) {
+		this.numeroConselho = numeroConselho;
+	}
+	public Date getDtEmissao() {
+		return dtEmissao;
+	}
+	public void setDtEmissao(Date dtEmissao) {
+		this.dtEmissao = dtEmissao;
+	}
+	public Date getDtValidade() {
+		return dtValidade;
+	}
+	public void setDtValidade(Date dtValidade) {
+		this.dtValidade = dtValidade;
+	}
+	public Conselhos getIdConselhosFk() {
+		return idConselhosFk;
+	}
+	public void setIdConselhosFk(Conselhos idConselhosFk) {
+		this.idConselhosFk = idConselhosFk;
+	}
+	public Pessoa getIdPessoaFk() {
+		return idPessoaFk;
+	}
+	public void setIdPessoaFk(Pessoa idPessoaFk) {
+		this.idPessoaFk = idPessoaFk;
+	}
+	public Uf getIdUfFk() {
+		return idUfFk;
+	}
+	public void setIdUfFk(Uf idUfFk) {
+		this.idUfFk = idUfFk;
+	}
 
-	
 }

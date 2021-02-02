@@ -18,8 +18,39 @@ public class Bancos extends AbstractEntity<Long> {
 	@Column(name = "sigla_banco", length = 150)
 	private String siglaBanco;
 
-	// ajustar essa relação.
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "idBancoFk")
 	private List<PessoaBancos> pessoaBancosCollection;
+
+	public String getCodigoBanco() {
+		return codigoBanco;
+	}
+
+	public void setCodigoBanco(String codigoBanco) {
+		this.codigoBanco = codigoBanco;
+	}
+
+	public String getNomeBanco() {
+		return nomeBanco;
+	}
+
+	public void setNomeBanco(String nomeBanco) {
+		this.nomeBanco = nomeBanco;
+	}
+
+	public String getSiglaBanco() {
+		return siglaBanco;
+	}
+
+	public void setSiglaBanco(String siglaBanco) {
+		this.siglaBanco = siglaBanco;
+	}
+
+	public List<PessoaBancos> getPessoaBancosCollection() {
+		return pessoaBancosCollection;
+	}
+
+	public void setPessoaBancosCollection(List<PessoaBancos> pessoaBancosCollection) {
+		this.pessoaBancosCollection = pessoaBancosCollection;
+	}
 
 }

@@ -124,4 +124,278 @@ public class Pessoa extends AbstractEntity<Long> {
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "idPessoaFk")
 	private List<PessoaDocumentosTitulo> pessoaDocumentosTituloCollection;
 
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getFone1() {
+		return fone1;
+	}
+
+	public void setFone1(String fone1) {
+		this.fone1 = fone1;
+	}
+
+	public String getFone2() {
+		return fone2;
+	}
+
+	public void setFone2(String fone2) {
+		this.fone2 = fone2;
+	}
+
+	public String getFone3() {
+		return fone3;
+	}
+
+	public void setFone3(String fone3) {
+		this.fone3 = fone3;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getEmailSaude() {
+		return emailSaude;
+	}
+
+	public void setEmailSaude(String emailSaude) {
+		this.emailSaude = emailSaude;
+	}
+
+	public Date getDtNascimento() {
+		return dtNascimento;
+	}
+
+	public void setDtNascimento(Date dtNascimento) {
+		this.dtNascimento = dtNascimento;
+	}
+
+	public String getNomePai() {
+		return nomePai;
+	}
+
+	public void setNomePai(String nomePai) {
+		this.nomePai = nomePai;
+	}
+
+	public String getNomeMae() {
+		return nomeMae;
+	}
+
+	public void setNomeMae(String nomeMae) {
+		this.nomeMae = nomeMae;
+	}
+
+	public Date getDtCadastro() {
+		return dtCadastro;
+	}
+
+	public void setDtCadastro(Date dtCadastro) {
+		this.dtCadastro = dtCadastro;
+	}
+
+	public Date getDtCancelamento() {
+		return dtCancelamento;
+	}
+
+	public void setDtCancelamento(Date dtCancelamento) {
+		this.dtCancelamento = dtCancelamento;
+	}
+
+	public String getMoivoCancelamento() {
+		return moivoCancelamento;
+	}
+
+	public void setMoivoCancelamento(String moivoCancelamento) {
+		this.moivoCancelamento = moivoCancelamento;
+	}
+
+	public List<PessoaFilhos> getPessoaFilhosCollection() {
+		return pessoaFilhosCollection;
+	}
+
+	public void setPessoaFilhosCollection(List<PessoaFilhos> pessoaFilhosCollection) {
+		this.pessoaFilhosCollection = pessoaFilhosCollection;
+	}
+
+	public List<PessoaDocumentosConselho> getPessoaDocumentosConselhoCollection() {
+		return pessoaDocumentosConselhoCollection;
+	}
+
+	public void setPessoaDocumentosConselhoCollection(List<PessoaDocumentosConselho> pessoaDocumentosConselhoCollection) {
+		this.pessoaDocumentosConselhoCollection = pessoaDocumentosConselhoCollection;
+	}
+
+	public List<PessoaDocumentosReservista> getPessoaDocumentosReservistaCollection() {
+		return pessoaDocumentosReservistaCollection;
+	}
+
+	public void setPessoaDocumentosReservistaCollection(
+			List<PessoaDocumentosReservista> pessoaDocumentosReservistaCollection) {
+		this.pessoaDocumentosReservistaCollection = pessoaDocumentosReservistaCollection;
+	}
+
+	public List<PessoaFotos> getPessoaFotosCollection() {
+		return pessoaFotosCollection;
+	}
+
+	public void setPessoaFotosCollection(List<PessoaFotos> pessoaFotosCollection) {
+		this.pessoaFotosCollection = pessoaFotosCollection;
+	}
+
+	public List<PessoaDocumentos> getPessoaDocumentosCollection() {
+		return pessoaDocumentosCollection;
+	}
+
+	public void setPessoaDocumentosCollection(List<PessoaDocumentos> pessoaDocumentosCollection) {
+		this.pessoaDocumentosCollection = pessoaDocumentosCollection;
+	}
+
+	public List<PessoaOperadores> getPessoaOperadoresCollection() {
+		return pessoaOperadoresCollection;
+	}
+
+	public void setPessoaOperadoresCollection(List<PessoaOperadores> pessoaOperadoresCollection) {
+		this.pessoaOperadoresCollection = pessoaOperadoresCollection;
+	}
+
+	public List<Enderecos> getEnderecosCollection() {
+		return enderecosCollection;
+	}
+
+	public void setEnderecosCollection(List<Enderecos> enderecosCollection) {
+		this.enderecosCollection = enderecosCollection;
+	}
+
+	public List<PessoaDocumentosHabilitacao> getPessoaDocumentosHabilitacaoCollection() {
+		return pessoaDocumentosHabilitacaoCollection;
+	}
+
+	public void setPessoaDocumentosHabilitacaoCollection(
+			List<PessoaDocumentosHabilitacao> pessoaDocumentosHabilitacaoCollection) {
+		this.pessoaDocumentosHabilitacaoCollection = pessoaDocumentosHabilitacaoCollection;
+	}
+
+	public Cidades getSeqCidadeNatal() {
+		return seqCidadeNatal;
+	}
+
+	public void setSeqCidadeNatal(Cidades seqCidadeNatal) {
+		this.seqCidadeNatal = seqCidadeNatal;
+	}
+
+	public Enderecos getSeqEndereco() {
+		return seqEndereco;
+	}
+
+	public void setSeqEndereco(Enderecos seqEndereco) {
+		this.seqEndereco = seqEndereco;
+	}
+
+	public Escolaridades getSeqEscolaridade() {
+		return seqEscolaridade;
+	}
+
+	public void setSeqEscolaridade(Escolaridades seqEscolaridade) {
+		this.seqEscolaridade = seqEscolaridade;
+	}
+
+	public EstadosCivis getSeqEstadoCivil() {
+		return seqEstadoCivil;
+	}
+
+	public void setSeqEstadoCivil(EstadosCivis seqEstadoCivil) {
+		this.seqEstadoCivil = seqEstadoCivil;
+	}
+
+	public PessoaOperadores getSeqOperadorCadastro() {
+		return seqOperadorCadastro;
+	}
+
+	public void setSeqOperadorCadastro(PessoaOperadores seqOperadorCadastro) {
+		this.seqOperadorCadastro = seqOperadorCadastro;
+	}
+
+	public PessoaOperadores getSeqOperadorCancelamento() {
+		return seqOperadorCancelamento;
+	}
+
+	public void setSeqOperadorCancelamento(PessoaOperadores seqOperadorCancelamento) {
+		this.seqOperadorCancelamento = seqOperadorCancelamento;
+	}
+
+	public Sexos getSeqSexoDeclarado() {
+		return seqSexoDeclarado;
+	}
+
+	public void setSeqSexoDeclarado(Sexos seqSexoDeclarado) {
+		this.seqSexoDeclarado = seqSexoDeclarado;
+	}
+
+	public Sexos getSeqSexo() {
+		return seqSexo;
+	}
+
+	public void setSeqSexo(Sexos seqSexo) {
+		this.seqSexo = seqSexo;
+	}
+
+	public List<PessoaDocumentosCtps> getPessoaDocumentosCtpsCollection() {
+		return pessoaDocumentosCtpsCollection;
+	}
+
+	public void setPessoaDocumentosCtpsCollection(List<PessoaDocumentosCtps> pessoaDocumentosCtpsCollection) {
+		this.pessoaDocumentosCtpsCollection = pessoaDocumentosCtpsCollection;
+	}
+
+	public List<PessoaBancos> getPessoaBancosCollection() {
+		return pessoaBancosCollection;
+	}
+
+	public void setPessoaBancosCollection(List<PessoaBancos> pessoaBancosCollection) {
+		this.pessoaBancosCollection = pessoaBancosCollection;
+	}
+
+	public List<HistUnidadesDiretor> getHistUnidadesDiretorCollection() {
+		return histUnidadesDiretorCollection;
+	}
+
+	public void setHistUnidadesDiretorCollection(List<HistUnidadesDiretor> histUnidadesDiretorCollection) {
+		this.histUnidadesDiretorCollection = histUnidadesDiretorCollection;
+	}
+
+	public List<PessoaFuncionarios> getPessoaFuncionariosCollection() {
+		return pessoaFuncionariosCollection;
+	}
+
+	public void setPessoaFuncionariosCollection(List<PessoaFuncionarios> pessoaFuncionariosCollection) {
+		this.pessoaFuncionariosCollection = pessoaFuncionariosCollection;
+	}
+
+	public List<PessoaDocumentosTitulo> getPessoaDocumentosTituloCollection() {
+		return pessoaDocumentosTituloCollection;
+	}
+
+	public void setPessoaDocumentosTituloCollection(List<PessoaDocumentosTitulo> pessoaDocumentosTituloCollection) {
+		this.pessoaDocumentosTituloCollection = pessoaDocumentosTituloCollection;
+	}
+
 }
