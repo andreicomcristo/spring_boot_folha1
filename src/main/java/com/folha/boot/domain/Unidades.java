@@ -80,8 +80,8 @@ public class Unidades extends AbstractEntity<Long> {
 	@OneToMany(mappedBy = "idUnidadeDeSaudeFk")
     private List<Autorizacoes> autorizacoesCollection;
     
-	@OneToMany(cascade = CascadeType.ALL, mappedBy = "unidades")
-    private List<HistUnidadesDiretor> histUnidadesDiretorCollection;
+	/*@OneToMany(cascade = CascadeType.ALL, mappedBy = "unidades")
+    private List<HistUnidadesDiretor> histUnidadesDiretorCollection;*/
     
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "idUnidadeFk")
     private List<HistFuncionariosUnidadeLotacao> histFuncionariosUnidadeLotacaoCollection;
@@ -257,13 +257,13 @@ public class Unidades extends AbstractEntity<Long> {
 		this.autorizacoesCollection = autorizacoesCollection;
 	}
 
-	public List<HistUnidadesDiretor> getHistUnidadesDiretorCollection() {
+	/*public List<HistUnidadesDiretor> getHistUnidadesDiretorCollection() {
 		return histUnidadesDiretorCollection;
-	}
+	}*/
 
-	public void setHistUnidadesDiretorCollection(List<HistUnidadesDiretor> histUnidadesDiretorCollection) {
+	/*public void setHistUnidadesDiretorCollection(List<HistUnidadesDiretor> histUnidadesDiretorCollection) {
 		this.histUnidadesDiretorCollection = histUnidadesDiretorCollection;
-	}
+	}*/
 
 	public List<HistFuncionariosUnidadeLotacao> getHistFuncionariosUnidadeLotacaoCollection() {
 		return histFuncionariosUnidadeLotacaoCollection;

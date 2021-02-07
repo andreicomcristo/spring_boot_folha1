@@ -115,8 +115,8 @@ public class Pessoa extends AbstractEntity<Long> {
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "idPessoaFk")
 	private List<PessoaBancos> pessoaBancosCollection;
 
-	@OneToMany(cascade = CascadeType.ALL, mappedBy = "pessoa")
-	private List<HistUnidadesDiretor> histUnidadesDiretorCollection;
+	/*@OneToMany(cascade = CascadeType.ALL, mappedBy = "pessoa")
+	private List<HistUnidadesDiretor> histUnidadesDiretorCollection;*/
 
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "idPessoaFk")
 	private List<PessoaFuncionarios> pessoaFuncionariosCollection;
@@ -374,13 +374,13 @@ public class Pessoa extends AbstractEntity<Long> {
 		this.pessoaBancosCollection = pessoaBancosCollection;
 	}
 
-	public List<HistUnidadesDiretor> getHistUnidadesDiretorCollection() {
+	/*public List<HistUnidadesDiretor> getHistUnidadesDiretorCollection() {
 		return histUnidadesDiretorCollection;
-	}
+	}*/
 
-	public void setHistUnidadesDiretorCollection(List<HistUnidadesDiretor> histUnidadesDiretorCollection) {
+	/*public void setHistUnidadesDiretorCollection(List<HistUnidadesDiretor> histUnidadesDiretorCollection) {
 		this.histUnidadesDiretorCollection = histUnidadesDiretorCollection;
-	}
+	}*/
 
 	public List<PessoaFuncionarios> getPessoaFuncionariosCollection() {
 		return pessoaFuncionariosCollection;

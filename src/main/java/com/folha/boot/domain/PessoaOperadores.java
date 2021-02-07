@@ -120,11 +120,11 @@ public class PessoaOperadores extends AbstractEntity<Long> {
 	@OneToMany(mappedBy = "idOperadorCancelamentoFk")
 	private List<HistFuncionariosVinculos> histFuncionariosVinculosCollection1;
 
-	@OneToMany(cascade = CascadeType.ALL, mappedBy = "pessoaOperadores")
-	private List<HistUnidadesDiretor> histUnidadesDiretorCollection;
+	/*@OneToMany(cascade = CascadeType.ALL, mappedBy = "pessoaOperadores")
+	private List<HistUnidadesDiretor> histUnidadesDiretorCollection;*/
 
-	@OneToMany(mappedBy = "idOperadorCancelamentoFk")
-	private List<HistUnidadesDiretor> histUnidadesDiretorCollection1;
+	/*@OneToMany(mappedBy = "idOperadorCancelamentoFk")
+	private List<HistUnidadesDiretor> histUnidadesDiretorCollection1;*/
 
 	@OneToMany(mappedBy = "idOperadorCadastroFk")
 	private List<PessoaFuncionarios> pessoaFuncionariosCollection;
@@ -432,21 +432,21 @@ public class PessoaOperadores extends AbstractEntity<Long> {
 		this.histFuncionariosVinculosCollection1 = histFuncionariosVinculosCollection1;
 	}
 
-	public List<HistUnidadesDiretor> getHistUnidadesDiretorCollection() {
+	/*public List<HistUnidadesDiretor> getHistUnidadesDiretorCollection() {
 		return histUnidadesDiretorCollection;
-	}
+	}*/
 
-	public void setHistUnidadesDiretorCollection(List<HistUnidadesDiretor> histUnidadesDiretorCollection) {
+	/*public void setHistUnidadesDiretorCollection(List<HistUnidadesDiretor> histUnidadesDiretorCollection) {
 		this.histUnidadesDiretorCollection = histUnidadesDiretorCollection;
-	}
+	}*/
 
-	public List<HistUnidadesDiretor> getHistUnidadesDiretorCollection1() {
+	/*public List<HistUnidadesDiretor> getHistUnidadesDiretorCollection1() {
 		return histUnidadesDiretorCollection1;
-	}
+	}*/
 
-	public void setHistUnidadesDiretorCollection1(List<HistUnidadesDiretor> histUnidadesDiretorCollection1) {
+	/*public void setHistUnidadesDiretorCollection1(List<HistUnidadesDiretor> histUnidadesDiretorCollection1) {
 		this.histUnidadesDiretorCollection1 = histUnidadesDiretorCollection1;
-	}
+	}*/
 
 	public List<PessoaFuncionarios> getPessoaFuncionariosCollection() {
 		return pessoaFuncionariosCollection;
