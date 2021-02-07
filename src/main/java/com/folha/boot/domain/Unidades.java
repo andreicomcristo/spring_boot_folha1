@@ -75,19 +75,19 @@ public class Unidades extends AbstractEntity<Long> {
     private TiposLogradouro idTipoLogradouroFk;
     
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "idUnidadeDeSaudeFk")
-    private List<HistUnidadesRegime> histUnidadesRegimeCollection;
+    private List<HistUnidadesRegime> histUnidadesRegimeList;
     
 	@OneToMany(mappedBy = "idUnidadeDeSaudeFk")
-    private List<Autorizacoes> autorizacoesCollection;
+    private List<Autorizacoes> autorizacoesList;
     
 	/*@OneToMany(cascade = CascadeType.ALL, mappedBy = "unidades")
     private List<HistUnidadesDiretor> histUnidadesDiretorCollection;*/
     
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "idUnidadeFk")
-    private List<HistFuncionariosUnidadeLotacao> histFuncionariosUnidadeLotacaoCollection;
+    private List<HistFuncionariosUnidadeLotacao> histFuncionariosUnidadeLotacaoList;
     
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "idUnidadeFk")
-    private List<HistFuncionariosUnidadeAtuacao> histFuncionariosUnidadeAtuacaoCollection;
+    private List<HistFuncionariosUnidadeAtuacao> histFuncionariosUnidadeAtuacaoList;
 
 	public String getNomeFantasia() {
 		return nomeFantasia;
@@ -242,19 +242,19 @@ public class Unidades extends AbstractEntity<Long> {
 	}
 
 	public List<HistUnidadesRegime> getHistUnidadesRegimeCollection() {
-		return histUnidadesRegimeCollection;
+		return histUnidadesRegimeList;
 	}
 
-	public void setHistUnidadesRegimeCollection(List<HistUnidadesRegime> histUnidadesRegimeCollection) {
-		this.histUnidadesRegimeCollection = histUnidadesRegimeCollection;
+	public void setHistUnidadesRegimeList(List<HistUnidadesRegime> histUnidadesRegimeList) {
+		this.histUnidadesRegimeList = histUnidadesRegimeList;
 	}
 
-	public List<Autorizacoes> getAutorizacoesCollection() {
-		return autorizacoesCollection;
+	public List<Autorizacoes> getAutorizacoesList() {
+		return autorizacoesList;
 	}
 
-	public void setAutorizacoesCollection(List<Autorizacoes> autorizacoesCollection) {
-		this.autorizacoesCollection = autorizacoesCollection;
+	public void setAutorizacoesList(List<Autorizacoes> autorizacoesList) {
+		this.autorizacoesList = autorizacoesList;
 	}
 
 	/*public List<HistUnidadesDiretor> getHistUnidadesDiretorCollection() {
@@ -265,22 +265,22 @@ public class Unidades extends AbstractEntity<Long> {
 		this.histUnidadesDiretorCollection = histUnidadesDiretorCollection;
 	}*/
 
-	public List<HistFuncionariosUnidadeLotacao> getHistFuncionariosUnidadeLotacaoCollection() {
-		return histFuncionariosUnidadeLotacaoCollection;
+	public List<HistFuncionariosUnidadeLotacao> getHistFuncionariosUnidadeLotacaoList() {
+		return histFuncionariosUnidadeLotacaoList;
 	}
 
-	public void setHistFuncionariosUnidadeLotacaoCollection(
-			List<HistFuncionariosUnidadeLotacao> histFuncionariosUnidadeLotacaoCollection) {
-		this.histFuncionariosUnidadeLotacaoCollection = histFuncionariosUnidadeLotacaoCollection;
+	public void setHistFuncionariosUnidadeLotacaoList(
+			List<HistFuncionariosUnidadeLotacao> histFuncionariosUnidadeLotacaoList) {
+		this.histFuncionariosUnidadeLotacaoList = histFuncionariosUnidadeLotacaoList;
 	}
 
-	public List<HistFuncionariosUnidadeAtuacao> getHistFuncionariosUnidadeAtuacaoCollection() {
-		return histFuncionariosUnidadeAtuacaoCollection;
+	public List<HistFuncionariosUnidadeAtuacao> getHistFuncionariosUnidadeAtuacaoList() {
+		return histFuncionariosUnidadeAtuacaoList;
 	}
 
-	public void setHistFuncionariosUnidadeAtuacaoCollection(
-			List<HistFuncionariosUnidadeAtuacao> histFuncionariosUnidadeAtuacaoCollection) {
-		this.histFuncionariosUnidadeAtuacaoCollection = histFuncionariosUnidadeAtuacaoCollection;
+	public void setHistFuncionariosUnidadeAtuacaoList(
+			List<HistFuncionariosUnidadeAtuacao> histFuncionariosUnidadeAtuacaoList) {
+		this.histFuncionariosUnidadeAtuacaoList = histFuncionariosUnidadeAtuacaoList;
 	}
 	
 }
