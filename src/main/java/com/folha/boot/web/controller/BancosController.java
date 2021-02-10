@@ -41,7 +41,7 @@ public class BancosController {
 	
 	@GetMapping("/editar/{id}")
 	public String preEditar(@PathVariable("id") Long id, ModelMap model) {
-		model.addAttribute("banco", service.buscarPorId(id));
+		model.addAttribute("bancos", service.buscarPorId(id));
 		return "/banco/cadastro";
 	}
 	
@@ -51,17 +51,18 @@ public class BancosController {
 		attr.addFlashAttribute("success", "Banco editado com sucesso.");
 		return "redirect:/bancos/cadastrar";
 	}
-	//Implementação futura
-	/*@GetMapping("/excluir/{id}")
+	
+	@GetMapping("/excluir/{id}")
 	public String excluir(@PathVariable("id") Long id, ModelMap model) {
 		
-		if (service.depertamentoTemCargos(id)) {
+		/*if (service.depertamentoTemCargos(id)) {
 			model.addAttribute("fail", "Departamento não removido. Possui cargo(s) vinculado(s).");
 		} else {
 			service.excluir(id);
 			model.addAttribute("success", "Departamento excluído com sucesso.");
-		}
-		
+		}*/
+		service.excluir(id); //Caso implemente a regra acima, apagar essa linha. 
+		model.addAttribute("success", "Departamento excluído com sucesso.");
 		return listar(model);
-	}*/
+	}
 }
