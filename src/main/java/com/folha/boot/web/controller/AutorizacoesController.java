@@ -46,7 +46,7 @@ public class AutorizacoesController {
 		model.addAttribute("autorizacoes", service.buscarPorId(id));
 		return "/autorizacao/cadastro";
 	}
-
+ 
 	@PostMapping("/editar")
 	public String editar(Autorizacoes autorizacoes, RedirectAttributes attr) {
 		service.editar(autorizacoes);
